@@ -1,6 +1,6 @@
 # MoviesAPP
-                          MoviesApp
-          https://shubhamtribhuvan8.github.io/MoviesAPP/
+MoviesApp : https://shubhamtribhuvan8.github.io/MoviesAPP/
+
 ![movies](https://user-images.githubusercontent.com/106821254/206989904-d1ab0a06-4203-4e1c-9a7b-bdbf211645ab.png)
 ![Screenshot 2022-12-12 131307](https://user-images.githubusercontent.com/106821254/206989929-96e831cc-3894-45f3-af53-d1a0b8e18f7a.png)
 

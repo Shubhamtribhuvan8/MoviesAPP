@@ -1,0 +1,107 @@
+.nav {
+    overflow: hidden;
+    justify-content: end;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 37px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.expandable {
+    visibility: collapse;
+}
+
+.expand-toggle:checked~* .expandable {
+    visibility: visible;
+}
+
+#customer-login {
+    margin-top: 100px;
+}
+
+.Form {
+    width: 500px;
+    color: #12284c;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.recover-form {
+    margin-bottom: 250px;
+}
+
+.Form_header>h1,
+p {
+    text-align: center;
+}
+
+#B-day {
+    width: 500px;
+    height: 50px;
+    border: 1px solid #12284c;
+}
+
+.Form_Ip {
+    width: 485px;
+    padding: 11px 18px;
+    border: 1px solid #12284c;
+}
+
+button {
+    cursor: pointer;
+}
+
+.Help_btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.End_btn {
+    height: 50px;
+    width: 80%;
+    padding: 15px;
+    border: 0px;   
+    margin: 10px auto;
+    color: white;
+    background-color: #12284c;
+}
+
+.Form_Invisible {
+    opacity: 0;
+}
+
+.loyalty {
+    background-color: #d1e8ee;
+}
+
+.centre {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 12px;
+}
+
+.form2 {
+    box-shadow: 8px -3px 33px grey;
+    width: 516px;
+    height: 427px;
+    margin: auto;
+    margin-top: 6%;
+}
+.Form_Box{
+    text-align: right;
+}

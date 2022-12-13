@@ -1,5 +1,6 @@
 # MoviesAPP
 MoviesApp
+Check Deployment:https://shubhamtribhuvan8.github.io/MoviesAPP/index.html
 
 ![movies](https://user-images.githubusercontent.com/106821254/207359525-7b353e63-736c-48da-b991-cacfe85a99e7.png)
 ![all](https://user-images.githubusercontent.com/106821254/207359583-5a118f1f-3c0e-4b9f-a4ba-ac7f858eda04.png)

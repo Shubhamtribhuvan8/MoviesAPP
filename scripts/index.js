@@ -1,9 +1,6 @@
 const images = document.querySelectorAll("img");
-
 let i = 0;
-
 setInterval(function () {
-
   if (i == 0) {
     images[i].className = "fade-in-image";
   } else if (i == images.length) {
@@ -65,7 +62,7 @@ var Movie = [
   {
     image_url:
       "https://igimages.gumlet.io/english/gallery/movies/venom/main1.jpg?w=576&dpr=1.0",
-    name: "The Martian",
+    name: "Venom",
     releasedate: "Release date:September 11, 2015",
     imdbrating: 8.9,
   },

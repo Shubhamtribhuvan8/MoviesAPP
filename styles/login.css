@@ -1,3 +1,41 @@
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+  }
+  
+  body {
+    background: #33CCCC; /* Fallback */
+    animation: color 9s infinite linear;
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+    font-family: 'Kavoon', sans-serif;
+    font-size: 2.5em;
+    color: white;
+  }
+
+
+
+
+
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  body {
+    background-color: lightgreen;
+  }
 .nav {
     overflow: hidden;
     justify-content: end;
@@ -16,13 +54,8 @@
     text-decoration: none;
     font-size: 17px;
 }
-.Form_Box {
-    text-align: right;
-}
 
-* {
-    font-family: 'Montserrat', sans-serif;
-}
+
 
 .expandable {
     visibility: collapse;
@@ -37,10 +70,10 @@
 }
 
 .Form {
-    width: 500px;
+    width: 100%;
     color: #12284c;
     margin-bottom: 50px;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .recover-form {
@@ -49,7 +82,9 @@
 
 .Form_header>h1,
 p {
+    font-family: initial;
     text-align: center;
+    color: mediumspringgreen;
 }
 
 #B-day {
@@ -61,6 +96,7 @@ p {
 .Form_Ip {
     width: 485px;
     padding: 11px 18px;
+    margin: 2%;
     border: 1px solid #12284c;
 }
 
@@ -104,4 +140,8 @@ button {
     height: 305px;
     margin: auto;
     margin-top: 7%;
+}
+
+.Form_Box{
+    text-align: center;
 }

@@ -1,3 +1,12 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+body {
+  background-color: lightgreen;
+}
+
 .nav {
     overflow: hidden;
     justify-content: end;
@@ -150,12 +159,13 @@
   font-family: Montserrat Light, sans-serif;
   height: 50px;
   margin: 1%;
+  text-align: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
   letter-spacing: .2px;
   line-height: 40px;
   padding: 0px 14px;
-  width: 205px;
+  width: 264px;
   }
 
   label {

@@ -22,20 +22,18 @@
         <div id="login-form-div" class="form2">
             <form id="customer-login" class="Form">
                 <header class="Form_header">
-                    <h1 >LOGIN</h1>
+                    <h1 >Login</h1>
                     <p id="wrongPass" style="color: red;"></p>
                 </header>
         
                 <div class="Form_Box">
-                    <input id="Email" type="email" class="Form_Ip" name="user_email" placeholder="Enter Your Email">
-                    <label class="Form_Invisible" for="user_email">Email</label>
+                    <input id="Email" type="email" class="Form_Ip" name="user_email" placeholder="Enter Your Email"  required="required">
                 </div>
         
-                <div class="Form_Box" style="border: 1px solid #12284c; display: flex;">
-                    <input id="Password" type="password" style="width: 330px; border: none;" class="Form_Ip" name="password"
-                        placeholder="Enter Your Password">
+                <div class="Form_Box">
+                    <input id="Password" type="password" class="Form_Ip" name="password"
+                        placeholder="Enter Your Password"  required="required">
                 </div>
-                <label class="Form_Invisible" for="password">Password</label>
                 <input class="End_btn" type="submit" value="SUBMIT" />
                 </form>
         </div>

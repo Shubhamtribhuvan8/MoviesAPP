@@ -8,7 +8,10 @@
         nameArr.filter(function (elem) {
             return elem.mail == mail
         }).map(function (elem) {
-            if (elem.pass == pass) {
+             if ( mail == "" || pass == "") {
+                alert("Fill All Details")
+            }
+            else if (elem.pass == pass) {
                 document.getElementById("wrongPass").textContent = "Sign in Successful"
                 window.location.href="index.html"
                 document.getElementById("showUsername").textContent = "Logged in as  "+mail+" ";
@@ -20,7 +23,9 @@
                 localStorage.setItem("user",elem.firstName)  
                 console.log(localStorage.getItem("user")); 
                
-            } else {
+            }
+           
+             else{
                 document.getElementById("wrongPass").textContent = "invalid Credentials";
             }
            

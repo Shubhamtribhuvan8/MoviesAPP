@@ -3,155 +3,156 @@
     background-color: lightblue;
   }
 }
+
 body {
   background-color: lightgreen;
 }
 
 .nav {
-    overflow: hidden;
-    justify-content: end;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+  overflow: hidden;
+  justify-content: end;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-  .nav a {
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 37px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+.nav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 37px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-  /* div {
+/* div {
       position: relative;
       border: 1px solid red;
       height: 751px;
   } */
-  #slideshow {
-    position: relative;
-    height: 100vh;
-  }
+#slideshow {
+  position: relative;
+  height: 100vh;
+}
 
-  #slideshow img {
+#slideshow img {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+}
+
+.fade-in-image {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
     opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    left: 0;
   }
 
-  .fade-in-image {
-    animation: fadeIn 2s;
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out-image {
+  animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
   }
 
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 0;
   }
+}
 
-  .fade-out-image {
-    animation: fadeOut 2s;
-  }
+/* Movies csss */
+#movies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
 
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
-    }
+#movies>div {
+  box-shadow: rgb(0 0 0) 0px 0px 0px;
+  text-align: center;
+}
 
-    100% {
-      opacity: 0;
-    }
-  }
+#movies>div>div {
+  display: flex;
+  justify-content: space-around;
+}
 
-  /* Movies csss */
-  #movies {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
+div>p:last-child {
+  text-decoration: line-through;
+}
 
-  #movies>div {
-    box-shadow: rgb(0 0 0) 0px 0px 0px;
-    text-align: center;
-  }
+#movies img {
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+}
 
-  #movies>div>div {
-    display: flex;
-    justify-content: space-around;
-  }
+.cart,
+button {
+  width: 50%;
+  border-radius: 10px;
+  background-color: black;
+  color: rgb(205 255 53);
+  border: none;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: 10%;
+  margin-top: 2%;
+}
 
-  div>p:last-child {
-    text-decoration: line-through;
-  }
+button {
+  width: 32%;
+}
 
-  #movies img {
-    width: 100%;
-    height: 205px;
-    object-fit: cover;
-  }
+button>a {
+  text-decoration: none;
+  color: white;
+}
 
-  .cart,
-  button {
-    width: 50%;
-    border-radius: 10px;
-    background-color: black;
-    color: rgb(205 255 53);
-    border: none;
-    padding: 10px 0;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: 10%;
-    margin-top: 2%;
-  }
+h2 {
+  margin-left: 2%;
+  font-size: xx-large;
+  color: darkred;
+}
 
-  button {
-    width: 32%;
-  }
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 27px;
+  color: darkorange;
+  font-family: fantasy;
+  font-weight: 500;
+}
 
-  button>a {
-    text-decoration: none;
-    color: white;
-  }
+h5 {
+  margin-left: 47%;
+  font-family: fantasy;
+  font-size: x-large;
+}
 
-  h2 {
-    margin-left: 2%;
-    font-size: xx-large;
-    color: darkred;
-  }
+h6 {
+  font-family: cursive;
+  font-size: larger;
+  color: crimson;
+}
 
-  p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: 27px;
-    color: darkorange;
-    font-family: fantasy;
-    font-weight: 500;
-  }
-
-  h5 {
-    margin-left: 47%;
-    font-family: fantasy;
-    font-size: x-large;
-  }
-
-  h6 {
-    font-family: cursive;
-    font-size: larger;
-    color: crimson;
-  }
-
-  select {
-    border: 0.5px solid #dcdcdc;
+select {
+  border: 0.5px solid #dcdcdc;
   color: chocolate;
   cursor: pointer;
   font-weight: bold;
@@ -166,18 +167,131 @@ body {
   line-height: 40px;
   padding: 0px 14px;
   width: 264px;
-  }
+}
 
-  label {
-    color: #e7f3f1;
+label {
+  color: #e7f3f1;
   font-size: 22px;
   font-weight: bold;
   font-family: system-ui;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  }
+}
 
-   .sortby {
-    text-align: center;
-    background-color: currentcolor;
-  } 
+.sortby {
+  text-align: center;
+  background-color: currentcolor;
+}
+
+
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 221px;
+  background-color: #487628;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.footercon {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 50px;
+  background-color: transparent;
+}
+
+.footer .flex1 {
+  color: #999;
+  ;
+  justify-content: space-around;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 17px;
+  min-height: 30px;
+
+}
+
+.footer .flex1 h5 {
+  align-self: flex-start;
+}
+
+.list1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-items: flex-start;
+  align-self: center;
+  justify-content: center;
+  min-height: 50px;
+  font-size: 13px;
+  padding: 0px 70px;
+  text-align: left;
+}
+
+.list1 li {
+  font-size: 13px;
+  margin: 7px -10px;
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-items: center;
+  align-self: flex-start;
+  justify-content: center;
+}
+
+.list1 li a {
+  color: #0a0a0a;
+  /* text-decoration: none; */
+  font-size: 16px;
+}
+
+li a {
+  font-size: 13px;
+  text-align: center;
+  color: #999;
+}
+
+
+.footertxt {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.end {
+  width: 100%;
+  min-height: 50px;
+  background-color: black;
+  justify-content: space-around;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #999;
+  margin-top: -60px;
+}
+
+.end h2 {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+}

@@ -1,17 +1,17 @@
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
 
 body {
   background-color: lightgreen;
 }
-
+#sort-buttons{
+  background-color: #487628;
+}
+.media1{
+  border: 2px solid red;
+}
 .nav {
   overflow: hidden;
   justify-content: end;
-  background-color: #333;
+  background-color: red;
   position: fixed;
   top: 0;
   width: 100%;
@@ -295,3 +295,12 @@ li a {
   flex-direction: row;
   font-size: 16px;
 }
+
+@media all and (min-width: 320px) and (max-width:600px) {
+  body {
+    background-color: lightblue;
+  }
+  .nav{
+    background-color: blue;
+  }
+} 
